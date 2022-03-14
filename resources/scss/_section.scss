@@ -1,0 +1,38 @@
+.section {
+  &__heading {
+    font-family: 'Kanit';
+    font-size: 100px;
+    line-height: 0;
+    padding-top: 120px;
+    padding-bottom: 88px;
+    text-transform: uppercase;
+  }
+}
+
+#emotionalStatesSection {
+  padding-bottom: 115px;
+
+  h2 {
+    font-weight: 500;
+    padding: 115px 0 111px 0;
+    margin-left: 32px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+}
+
+#heWhoIs {
+  h3 {
+    font-family: 'Kanit';
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+    color: $slate-blue;
+  }
+
+  p {
+    font-family: 'Open Sans';
+    font-size: 22px;
+  }
+}

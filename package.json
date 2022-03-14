@@ -1,0 +1,24 @@
+{
+  "name": "baby-yoda",
+  "version": "1.0.0",
+  "description": "Baby Yoda test site for CJRW.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Waire",
+  "license": "ISC",
+  "dependencies": {
+    "uikit": "^3.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "babel-loader": "^8.2.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^7.0.1",
+    "webpack": "^5.70.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: $slate-blue;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-slate-blue {
+  color: $slate-blue;
+}
+
+.star-bg {
+  background: url('/dist/img/star-field.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

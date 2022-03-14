@@ -1,0 +1,38 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: 476px 446px;
+  grid-template-areas: 'soup stroller'
+'soup buttons';
+  grid-gap: 20px;
+  padding-bottom: 20px;
+
+  img {
+    &:nth-child(1) {
+      grid-area: soup;
+    }
+    &:nth-child(2) {
+      grid-area: stroller;
+    }
+    &:nth-child(3) {
+      grid-area: buttons;
+    }
+  }
+
+  &__content {
+    padding-left: 75px;
+    padding-right: 145px;
+
+    p {
+      font-family: 'Open Sans';
+      font-size: 22px;
+      line-height: 36px;
+      font-weight: 400;
+      color: #000000;
+
+      &:last-of-type {
+        padding-bottom: 85px;
+      }
+    }
+  }
+
+}

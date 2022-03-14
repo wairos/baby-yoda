@@ -1,0 +1,52 @@
+.friend-foe {
+  &__container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__label {
+    font-family: 'Kanit';
+    font-size: 17px;
+    display: block;
+    margin-top: 247px;
+    margin-bottom: 8px;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    font-family: 'Kanit';
+    font-style: italic;
+    font-size: 39.51px;
+    display: block;
+    margin-top: 0;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+
+  .uk-slider-items li {
+    div {
+      width: 431px;
+      height: 328px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+
+      div {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        color: white;
+        height: 100%;
+        padding-left: 31px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
