@@ -37,7 +37,7 @@
     }
 
     h1 {
-      font-family: 'Kanit';
+      font-family: $starwars;
       font-weight: 450;
       font-size: 98px;
       line-height: 88px;
@@ -52,8 +52,8 @@
     }
 
     p {
-      font-family: 'Open Sans';
-      font-weight: lighter;
+      font-family: $open-sans;
+      font-weight: 400;
       line-height: 36px;
       font-size: 21px;
       margin-top: 0;

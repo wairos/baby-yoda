@@ -1,12 +1,13 @@
 .photo-grid {
   display: grid;
-  grid-template-columns: 476px 446px;
+  grid-template-columns:1fr .9369747899159664fr;
   grid-template-areas: 'soup stroller'
 'soup buttons';
   grid-gap: 20px;
   padding-bottom: 20px;
+  flex: 0 0 50%;
 
-  img {
+  .responsive-image {
     &:nth-child(1) {
       grid-area: soup;
     }
@@ -19,8 +20,8 @@
   }
 
   &__content {
-    padding-left: 75px;
-    padding-right: 145px;
+    margin-left: 75px;
+    margin-right: 145px;
 
     p {
       font-family: 'Open Sans';

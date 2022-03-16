@@ -1,0 +1,41 @@
+.spot-list {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    max-width: 1650px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include max-lg {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__heading {
+    font-family: $starwars;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $slate-blue;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 57px;
+      margin-right: 12px;
+    }
+  }
+}

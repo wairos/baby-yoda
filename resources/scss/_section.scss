@@ -1,7 +1,8 @@
 .section {
   &__heading {
-    font-family: 'Kanit';
+    font-family: $starwars;
     font-size: 100px;
+    font-weight: 500;
     line-height: 0;
     padding-top: 120px;
     padding-bottom: 88px;
@@ -23,16 +24,11 @@
 
 #heWhoIs {
   h3 {
-    font-family: 'Kanit';
+    font-family: $starwars;
     font-size: 48px;
     line-height: 1em;
     margin-bottom: 42px;
     text-transform: uppercase;
     color: $slate-blue;
-  }
-
-  p {
-    font-family: 'Open Sans';
-    font-size: 22px;
   }
 }

@@ -2,59 +2,97 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 590px;
+
 
   &__image {
     float: left;
-    margin-left: -56px;
+    margin-left: -5.6em;
     position: relative;
     z-index: 1;
     img {
       width: auto;
-      height: 587px;
+      height: 58.7em;
       display: block;
     }
   }
 
   &__content {
     position: relative;
-    width: 705px;
+    width: 70.5em;
     float: left;
     z-index: 2;
-    padding-bottom: 70px;
+    padding-bottom: 7em;
   }
 
   &__heading {
-    font-family: 'Kanit';
+    color: white;
+    font-family: $starwars;
     font-weight: 800;
     font-style: italic;
-    font-size: 310px;
-    color: white;
-    margin-bottom: -59px;
-    margin-left: 9px;
+    font-size: 31em;
+    position: relative;
+    bottom: -0.2em;
+    left: 0.021em;
     line-height: 1em;
     text-transform: uppercase;
+
+    #happy & {
+      font-size: 21.9em;
+    }
+
+    #hungry & {
+      font-size: 18em;
+    }
+
+    #tired & {
+      font-size: 24em;
+    }
   }
+
 
   &__text-box {
     background: white;
-    padding: 64px 52px 64px 64px;
+    padding: 6.4em 5.2em 6.4em 6.4em;
 
 
     h3 {
       color: $green;
-      font-size: 46px;
-      font-weight: 650;
-      margin-bottom: 6px;
+      font-family: $starwars;
+      font-size: 4.8em;
+      font-weight: 400;
+      margin-bottom: 0.6em;
       text-transform: uppercase;
       line-height: 1em;
+
+      #happy & {
+        font-size: 4.2em;
+      }
+
+      #hungry & {
+        font-size: 3.3em;
+      }
     }
 
     p {
-      font-family: 'Open Sans';
-      font-size: 22px;
-      line-height: 34px;
       margin: 0;
     }
   }
 
+}
+
+.emotional-slider {
+  font-size: 10px;
+  padding-bottom: 114px;
+
+  @include max-xxl {
+    font-size: 8px;
+  }
+  @include max-xl {
+    font-size: 6px;
+    .emotional-slide__text-box {
+      font-size: 8px;
+    }
+
+  }
 }

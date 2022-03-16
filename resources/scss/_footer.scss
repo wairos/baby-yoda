@@ -1,0 +1,53 @@
+.footer {
+
+  &__content-container {
+    width: 100%;
+    max-width: 1630px;
+    margin: auto;
+  }
+
+  &__grogu {
+    width: 50%;
+    fill: $green;
+    margin-bottom: -12px;
+    padding: 0 10px;
+  }
+
+  &__bg {
+    background: $dark;
+    border-top: 19px solid $green;
+    padding-top: 80px;
+    padding-bottom: 67px;
+
+  }
+
+  &__mando-title {
+    font-size: 32px;
+  }
+
+  p {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+
+    &:first-of-type {
+      font-size: 30px;
+    }
+  }
+
+  &::before {
+    content: '';
+  }
+  &__content {
+    width: 50%;
+    padding-right: 181px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 50px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

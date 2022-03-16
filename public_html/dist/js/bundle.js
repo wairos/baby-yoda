@@ -25,7 +25,7 @@ eval("/*! UIkit 3.11.1 | https://www.getuikit.com | (c) 2014 - 2022 YOOtheme | M
   \********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! uikit */ \"./node_modules/uikit/dist/js/uikit.js\");\n\n//# sourceURL=webpack://baby-yoda/./resources/src/index.js?");
+eval("__webpack_require__(/*! uikit */ \"./node_modules/uikit/dist/js/uikit.js\");\n\nlet header = document.getElementById('header');\nconsole.log(header.offsetTop);\n\n//# sourceURL=webpack://baby-yoda/./resources/src/index.js?");
 
 /***/ })
 

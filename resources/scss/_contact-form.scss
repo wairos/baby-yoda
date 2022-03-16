@@ -1,0 +1,46 @@
+#contactForm {
+  background: $green;
+  padding: 92px 15px 84px 110px;
+  width: 50%;
+  border-radius: 78px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  form {
+    margin-right: 9.635416%;
+  }
+
+  .form-group {
+    margin-bottom: 42px;
+
+    label {
+      display: block;
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 26px;
+      background: transparent;
+      border: 3px solid white;
+      border-radius: 18px;
+      color: white;
+    }
+
+    textarea {
+      height: 195px;
+    }
+  }
+
+  .btn {
+    margin: 58px auto 0 auto;
+    font-size: 30px;
+    width: 232px;
+    height: 45px;
+  }
+}

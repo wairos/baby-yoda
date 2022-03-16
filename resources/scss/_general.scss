@@ -8,12 +8,23 @@ h2 {
   color: $slate-blue;
 }
 
+p {
+  font-family: $open-sans;
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 22px;
+}
+
 .text-green {
   color: $green;
 }
 
 .text-white {
   color: white;
+}
+
+.slash-grey {
+  color: $slash-grey;
 }
 
 .text-slate-blue {
@@ -24,4 +35,46 @@ h2 {
   background: url('/dist/img/star-field.webp');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.content-container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.responsive-image {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.arrow {
+  box-sizing: content-box;
+  width: 40px;
+  height: 40px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  transform: rotate(45deg);
+  display: block;
+  background: transparent!important;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 65px;
+  z-index: 3;
+
+  &--prev {
+    transform: rotate(225deg);
+    right: initial;
+    left: 65px;
+    z-index: 3;
+  }
+
+  &--black {
+    border-color: black;
+  }
 }

@@ -1,12 +1,8 @@
 .friend-foe {
-  &__container {
-    max-width: 1360px;
-    width: 100%;
-    margin: 0 auto;
-  }
+  margin-bottom: 186px;
 
   &__label {
-    font-family: 'Kanit';
+    font-family: $starwars;
     font-size: 17px;
     display: block;
     margin-top: 247px;
@@ -16,7 +12,7 @@
   }
 
   &__name {
-    font-family: 'Kanit';
+    font-family: $starwars;
     font-style: italic;
     font-size: 39.51px;
     display: block;

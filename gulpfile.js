@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass')(require('node-sass'));
 const webpack = require('webpack-stream');
 const webp = require('gulp-webp');
+const cleanCSS = require('gulp-clean-css');
 
 gulp.task('scripts', gulp.parallel(compileJs));
 gulp.task('styles', gulp.parallel(compileSass));
@@ -12,10 +13,17 @@ gulp.task('watch:styles', gulp.series(compileSass, watchSass));
 gulp.task('watch:scripts', gulp.series(compileJs, watchJs));
 
 gulp.task('images', () =>
-    gulp.src('./resources/media/**/*.png')
+    gulp.src('./resources/media/**/*.jpg')
         .pipe(webp())
         .pipe(gulp.dest('./public_html/dist/img'))
 );
+
+
+gulp.task('minify-css', () => {
+    return gulp.src('./public_html/dist/css/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('./public_html/dist/css/'));
+});
 
 function watchJs() {
     return gulp.watch('./resources/src/**/*.js', gulp.parallel(compileJs));
