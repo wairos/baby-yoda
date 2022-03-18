@@ -1,5 +1,24 @@
 .friend-foe {
-  margin-bottom: 186px;
+  ul.uk-slider-items {
+    grid-gap: 2%;
+  }
+
+  &__item {
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
 
   &__label {
     font-family: $starwars;
@@ -9,6 +28,9 @@
     margin-bottom: 8px;
     line-height: 1em;
     text-transform: uppercase;
+    @include max-xl {
+      margin-top: 200px;
+    }
   }
 
   &__name {
@@ -21,28 +43,11 @@
     text-transform: uppercase;
   }
 
-  .uk-slider-items li {
-    div {
-      width: 431px;
-      height: 328px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 22px;
-
-      div {
-        position: absolute;
-        bottom: 0;
-        z-index: 2;
-        color: white;
-        height: 100%;
-        padding-left: 31px;
-      }
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    padding-left: 31px;
   }
 }

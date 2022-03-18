@@ -1,0 +1,31 @@
+.text-bunched {
+  line-height: 1.2em;
+}
+
+.font-size-bigger {
+  font-size: 32px;
+}
+.font-size-big {
+  font-size: 30px;
+}
+.font-size-above-average {
+  font-size: 28px;
+}
+.font-size-regular {
+  font-size: 24px;
+}
+.font-size-normal {
+  font-size: 22px;
+}
+.font-size-small {
+  font-size: 21px;
+}
+.font-size-tiny {
+  font-size: 18px;
+}
+
+@for $i from 1 through 9 {
+  .font-weight-#{$i}00 {
+    font-weight: #{$i * 100};
+  }
+}

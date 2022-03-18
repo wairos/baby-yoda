@@ -7,8 +7,19 @@
   bottom: 0;
   right: 0;
 
+  @include max-lg {
+    position: relative;
+    width: 100%;
+  }
+  @include max-md {
+    padding: 2rem;
+  }
+
   form {
     margin-right: 9.635416%;
+    @include max-md {
+      margin-right: 0;
+    }
   }
 
   .form-group {
@@ -20,6 +31,10 @@
       font-size: 24px;
       margin-bottom: 12px;
       text-transform: uppercase;
+      @include max-xl {
+        font-size: 19.2px;
+        margin-bottom: 9.6px;
+      }
     }
     input,
     textarea {
@@ -30,10 +45,16 @@
       border: 3px solid white;
       border-radius: 18px;
       color: white;
+      @include max-xl {
+        padding: 20px;
+      }
     }
 
     textarea {
       height: 195px;
+      @include max-md {
+        height: 100px;
+      }
     }
   }
 

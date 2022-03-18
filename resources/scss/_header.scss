@@ -2,6 +2,10 @@
   color: white;
   width: 100%;
   z-index: 20;
+  @include max-lg {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .grogu {
     width: 164px;
@@ -13,6 +17,15 @@
     left: 0;
     right: 0;
     fill: white;
+
+    @include max-xxl {
+      width: 131.2px;
+      height: 75.2px;
+    }
+    @include max-lg {
+      margin-left: 15px;
+      position: relative;
+    }
   }
 
   .grogu-eye {
@@ -21,35 +34,66 @@
     stroke-width: 4;
   }
 
+  &__toggle-btn {
+    display: none;
+    @include max-lg {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__nav {
     padding: 0 75px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include max-xxl {
+      padding: 0 60px;
+    }
+    @include max-xl {
+      padding: 0 30px;
+    }
+    @include max-lg {
+      padding: 0;
+      display: none;
+    }
 
     ul {
       display: flex;
       align-items: center;
+      justify-content: flex-start;
       height: 94px;
       width: 100%;
       padding: 0;
       margin: 0;
       list-style: none;
+      &:nth-child(2){
+        justify-content: flex-end;
+      }
+      @include max-xxl {
+        height: 75.2px;
+      }
+      @include max-lg {
+        flex-direction: column;
+        height: calc(100vh - 75.2px);
+        margin-top: 75.2px;
+        transform: translateY(-100%);
+      }
     }
 
-    $nav-pad: 30%;
+
 
     li {
       text-align: center;
       margin-right: 32px;
-
-      &:nth-child(3) {
-        padding-right: calc(100% - 688px);
+      @include max-xxl {
+        margin-right:25.6px;
+      }
+      @include max-xl {
+      }
+      @include max-lg {
         margin-right: 0;
       }
-
-      &:nth-child(4) {
-
-      }
-
       &:last-of-type {
         margin-right: 0;
       }
@@ -59,8 +103,15 @@
       color: white;
       font-family: $starwars;
       text-transform: uppercase;
-      font-size: 22px;
       font-weight: 600;
+      display: block;
+      font-size: 22px;
+      @include max-xl {
+        font-size: 18px;
+      }
+      @include max-lg {
+        font-size: 24px;
+      }
     }
   }
 

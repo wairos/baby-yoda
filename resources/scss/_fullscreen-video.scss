@@ -7,8 +7,9 @@
 
   &__header {
     height: 100vh;
+    margin-top: -94px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   &__wrapper {
@@ -30,8 +31,9 @@
 
   &__overlay-content {
     z-index: 2;
-    margin-left: 139px;
-    margin-top: 236px;
+    margin-left: 7.239583%;
+    margin-bottom: 7.239583%;
+
     h1, p, button {
       color: white;
     }
@@ -40,9 +42,16 @@
       font-family: $starwars;
       font-weight: 450;
       font-size: 98px;
-      line-height: 88px;
+      line-height: 0.9em;
       text-transform: uppercase;
       letter-spacing: 0.4px;
+      @include max-xxl {
+        font-size: 78.4px;
+        letter-spacing: 0.38px;
+      }
+      @include max-md {
+        font-size: 55px;
+      }
 
       .strong {
         font-weight: 800;
@@ -54,10 +63,18 @@
     p {
       font-family: $open-sans;
       font-weight: 400;
-      line-height: 36px;
-      font-size: 21px;
       margin-top: 0;
       margin-bottom: 43px;
+      max-width: 25em;
+      width: 100%;
+      @include max-xxl {
+        font-size: 16.8px;
+        margin-bottom: 34.4px;
+      }
+      @include max-md {
+        font-size: 16px;
+        max-width: 18em;
+      }
     }
   }
 }

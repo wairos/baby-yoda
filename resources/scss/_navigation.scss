@@ -1,0 +1,45 @@
+#navigation {
+  background: linear-gradient( lighten($slate-blue, 10), darken($slate-blue, 10));
+  padding: 4rem;
+  @include max-sm {
+    padding: 4rem 2rem;
+  }
+
+  .uk-modal-title {
+    color: white;
+  }
+
+  .uk-modal-close-default {
+    color: white;
+  }
+
+  button {
+    height: 80px;
+    margin: 0;
+    top: 0;
+    padding-right: 36px;
+    display: flex;
+    align-items: center;
+    margin-right: -15px;
+
+    &:after {
+      content: "close";
+      padding-left: 10px;
+      font-size: 0.875rem;
+
+    }
+  }
+
+  nav ul {
+    list-style: none;
+
+    li a {
+      font-size: 30px;
+      margin-bottom: 5em;
+      color: $green;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $starwars;
+    }
+  }
+}

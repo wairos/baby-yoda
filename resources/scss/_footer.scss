@@ -1,16 +1,22 @@
 .footer {
-
-  &__content-container {
-    width: 100%;
-    max-width: 1630px;
-    margin: auto;
+  font-size: 10px;
+  @include max-lg {
+    font-size: 8px;
+    background: $green;
+  }
+  &::before {
+    content: '';
   }
 
-  &__grogu {
-    width: 50%;
-    fill: $green;
-    margin-bottom: -12px;
-    padding: 0 10px;
+  p {
+    color: white;
+    font-weight: 400;
+  }
+
+  &__address {
+    font-size: 2.8em;
+    line-height: 1.2em;
+    margin-bottom: 75px;
   }
 
   &__bg {
@@ -18,29 +24,18 @@
     border-top: 19px solid $green;
     padding-top: 80px;
     padding-bottom: 67px;
-
-  }
-
-  &__mando-title {
-    font-size: 32px;
-  }
-
-  p {
-    color: white;
-    font-size: 30px;
-    font-weight: 400;
-
-    &:first-of-type {
-      font-size: 30px;
+    @include max-lg {
+      border: none;
     }
   }
 
-  &::before {
-    content: '';
-  }
   &__content {
     width: 50%;
     padding-right: 181px;
+    @include max-lg {
+      padding: 15px;
+      width: 100%;
+    }
 
     p {
       margin-top: 0;
@@ -49,5 +44,42 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  &__content-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__grogu {
+    width: 50%;
+    fill: $green;
+    margin-bottom: -12px;
+    padding: 0 10px;
+    @include max-lg {
+      width: 300px;
+      fill: $slate-blue;
+      margin-bottom: -2px;
+    }
+  }
+
+  &__lost-and-found {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 7.5em;
+  }
+
+  &__mando-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__small-text {
+    font-size: 2.1em;
+    margin-bottom: 50px;
   }
 }

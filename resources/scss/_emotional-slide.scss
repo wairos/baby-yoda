@@ -2,27 +2,61 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 590px;
+  height: 59em;
+  @include max-xl {
+    height: 62em;
+  }
+  @include max-lg {
+    height: 62em;
+  }
+  @include max-md {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
+
+  &__item {
+    @include max-xl {
+      padding: 1em 0;
+    }
+    @include max-md {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
 
 
   &__image {
-    float: left;
     margin-left: -5.6em;
     position: relative;
     z-index: 1;
+    @include max-md {
+      margin-left: 0;
+    }
     img {
       width: auto;
       height: 58.7em;
       display: block;
+      @include max-md {
+        width: 80%;
+        height: auto;
+        margin: auto;
+      }
     }
   }
 
   &__content {
     position: relative;
     width: 70.5em;
-    float: left;
     z-index: 2;
     padding-bottom: 7em;
+    @include max-md {
+      float: none;
+      width: 80%;
+      margin-top: -5em;
+      padding-bottom: 3em;
+    }
   }
 
   &__heading {
@@ -36,6 +70,18 @@
     left: 0.021em;
     line-height: 1em;
     text-transform: uppercase;
+    @include max-xl {
+      font-size: 28em;
+    }
+    @include max-md {
+      font-size: 18em!important;
+      line-height: 0;
+      bottom: 26px;
+      left: 3px;
+    }
+    @include max-sm {
+      font-size: 10em!important;
+    }
 
     #happy & {
       font-size: 21.9em;
@@ -54,7 +100,11 @@
   &__text-box {
     background: white;
     padding: 6.4em 5.2em 6.4em 6.4em;
-
+    @include max-md {
+      height: auto;
+      padding: 2rem 1rem;
+      min-height: 200px;
+    }
 
     h3 {
       color: $green;
@@ -64,6 +114,9 @@
       margin-bottom: 0.6em;
       text-transform: uppercase;
       line-height: 1em;
+      @include max-sm {
+        font-size: 3em!important;
+      }
 
       #happy & {
         font-size: 4.2em;
@@ -76,6 +129,11 @@
 
     p {
       margin: 0;
+      font-size: 2.2em;
+      line-height: 1.6em;
+      @include max-xl {
+        font-size: 3em;
+      }
     }
   }
 
@@ -83,16 +141,18 @@
 
 .emotional-slider {
   font-size: 10px;
-  padding-bottom: 114px;
+  padding-bottom: 11.4em;
+  .uk-dotnav > .uk-active > *{
+    background-color: $green;
+  }
 
   @include max-xxl {
-    font-size: 8px;
+    font-size: 7px;
   }
   @include max-xl {
-    font-size: 6px;
-    .emotional-slide__text-box {
-      font-size: 8px;
-    }
-
+    font-size: 5px;
+  }
+  @include max-md {
+    padding-bottom: 76.8px;
   }
 }

@@ -1,12 +1,37 @@
 .section {
+  margin-bottom: 48px;
+
   &__heading {
     font-family: $starwars;
     font-size: 100px;
     font-weight: 500;
-    line-height: 0;
     padding-top: 120px;
     padding-bottom: 88px;
     text-transform: uppercase;
+
+    @include max-xl {
+      font-size: 80px;
+      padding-top: 96px;
+      padding-bottom: 70.4px;
+    }
+
+    @include max-lg {
+      font-size: 64px;
+      padding-top: 76.8px;
+      padding-bottom: 56.32px;
+    }
+
+    @include max-md {
+      font-size: 51.2px;
+      padding-top: 61.44px;
+      padding-bottom: 45.056px;
+    }
+
+    @include max-sm {
+      font-size: 40.96px;
+      padding-top: 49.152px;
+      padding-bottom: 36.0448px;
+    }
   }
 }
 
@@ -22,13 +47,4 @@
   }
 }
 
-#heWhoIs {
-  h3 {
-    font-family: $starwars;
-    font-size: 48px;
-    line-height: 1em;
-    margin-bottom: 42px;
-    text-transform: uppercase;
-    color: $slate-blue;
-  }
-}
+

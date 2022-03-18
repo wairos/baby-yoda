@@ -1,4 +1,12 @@
 .spot-list {
+
+  &__content {
+    @include max-lg {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,6 +17,8 @@
 
     @include max-lg {
       grid-template-columns: 1fr;
+      grid-row-gap: 4rem;
+      padding-bottom: 4rem;
     }
   }
 
@@ -17,16 +27,16 @@
   }
 
   &__heading {
-    font-family: $starwars;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: $slate-blue;
     text-align: center;
+    margin-bottom: 27px;
+    font-weight: 500;
+
   }
 
   &__text {
-    font-size: 18px;
     text-align: center;
+    max-width: 27em;
+    margin: 18px auto;
   }
 
 
@@ -36,6 +46,9 @@
     img {
       width: 57px;
       margin-right: 12px;
+      @include max-md {
+        width: 48px;
+      }
     }
   }
 }

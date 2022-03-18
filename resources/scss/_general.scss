@@ -4,14 +4,43 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 10px;
+}
+
 h2 {
   color: $slate-blue;
+  line-height: 1em;
+}
+
+h3 {
+  color: $slate-blue;
+  font-family: $starwars;
+  font-size: 48px;
+  line-height: 1em;
+  margin-bottom: .875em;
+  text-transform: uppercase;
+  @include max-xxl {
+    font-size: 38.4px;
+  }
+  @include max-xl {
+    font-size: 36px;
+  }
+  @include max-lg {
+    font-size: 32px;
+  }
+  @include max-md {
+    font-size: 30px;
+  }
+  @include max-sm {
+    font-size: 28px;
+  }
 }
 
 p {
   font-family: $open-sans;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 1.6em;
   font-size: 22px;
 }
 
@@ -66,15 +95,33 @@ p {
   bottom: 0;
   right: 65px;
   z-index: 3;
+  @include max-md {
+    right: 16px;
+    display: none;
+  }
 
   &--prev {
     transform: rotate(225deg);
     right: initial;
     left: 65px;
     z-index: 3;
+    @include max-md {
+      left: 16px;
+    }
   }
 
   &--black {
     border-color: black;
+  }
+}
+
+.uk-slider-nav.uk-dotnav {
+  width: 100%;
+  height: 2rem;
+  display: none;
+  @include max-md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
