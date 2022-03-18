@@ -125,3 +125,10 @@ p {
     justify-content: center;
   }
 }
+
+.mobile-only {
+  display: block;
+  @include max-md {
+
+  }
+}

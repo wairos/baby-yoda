@@ -9841,6 +9841,9 @@ p {
       align-items: center;
       justify-content: center; } }
 
+.mobile-only {
+  display: block; }
+
 .header {
   color: white;
   width: 100%;
@@ -9979,7 +9982,8 @@ p {
   .fullscreen-video__overlay-content {
     z-index: 2;
     margin-left: 7.239583%;
-    margin-bottom: 7.239583%; }
+    margin-bottom: 7.239583%;
+    margin-bottom: 82px; }
     .fullscreen-video__overlay-content h1, .fullscreen-video__overlay-content p, .fullscreen-video__overlay-content button {
       color: white; }
     .fullscreen-video__overlay-content h1 {
