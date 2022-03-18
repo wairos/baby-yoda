@@ -10508,6 +10508,9 @@ p {
         margin-right: 0; } }
   #contactForm .form-group {
     margin-bottom: 42px; }
+    @media (max-width: 767px) {
+      #contactForm .form-group {
+        margin-bottom: 28px; } }
     #contactForm .form-group label {
       display: block;
       color: white;
@@ -10531,6 +10534,10 @@ p {
         #contactForm .form-group input,
         #contactForm .form-group textarea {
           padding: 20px; } }
+      @media (max-width: 767px) {
+        #contactForm .form-group input,
+        #contactForm .form-group textarea {
+          padding: 10px; } }
     #contactForm .form-group textarea {
       height: 195px; }
       @media (max-width: 767px) {

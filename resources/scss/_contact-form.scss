@@ -24,6 +24,9 @@
 
   .form-group {
     margin-bottom: 42px;
+    @include max-md {
+      margin-bottom: 28px;
+    }
 
     label {
       display: block;
@@ -47,6 +50,9 @@
       color: white;
       @include max-xl {
         padding: 20px;
+      }
+      @include max-md {
+        padding: 10px;
       }
     }
 
